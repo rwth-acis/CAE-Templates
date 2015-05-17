@@ -33,6 +33,10 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 * Instantiates a new Las2peerWidgetLibrary, given its endpoint URL and the IWC-callback function
 */
 function Las2peerWidgetLibrary(endpointUrl, iwcCallback) {
+  // care for widget frontends without a microservice backend
+  if(endpointUrl === null){
+    endpointUrl = "not specified";
+  }
 	// care for trailing slash in endpoint URL
 	if(endpointUrl.endsWith("/")) {
 		this._serviceEndpoint = endpointUrl.substr(0,endpointUrl.length-1);

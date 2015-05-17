@@ -32,8 +32,9 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 var client;
 
 var init = function () {
-  // define callbacks here
+
   var iwcCallback = function (intent) {
+    // define your reactions on incoming iwc events here
     console.log(intent);
   };
   client = new Las2peerWidgetLibrary("$MICROSERVICE_ENDPOINT_URL$", iwcCallback);

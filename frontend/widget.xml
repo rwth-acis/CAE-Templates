@@ -88,6 +88,8 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <!-- import application script -->
   <script type="text/javascript" src="$WIDGET_HOME$/js/applicationScript.js"></script>
 
+  <!-- Addotional widget specific imports -->
+  
 </head>
 <body>
 
