@@ -1,4 +1,4 @@
-<project name="LAS2peer-Template-Project" default="all" basedir="."
+<project name="$Microservice_Name$" default="all" basedir="."
   xmlns:ivy="antlib:org.apache.ivy.ant">
 
   <property file="etc/ant_configuration/user.properties" />
