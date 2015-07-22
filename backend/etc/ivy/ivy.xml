@@ -11,11 +11,5 @@
       changing="true" />
     <dependency org="junit" name="junit" rev="4.11" />
     $MYSQL_DEPENDENCY$
-    <dependency org="org.apache.commons" name="commons-pool2"
-      rev="2.2" />
-    <dependency org="org.apache.commons" name="commons-dbcp2"
-      rev="2.0" />
-    <dependency org="com.googlecode.json-simple" name="json-simple"
-      rev="1.1.1" />
   </dependencies>
 </ivy-module>
