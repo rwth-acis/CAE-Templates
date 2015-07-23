@@ -1,17 +1,22 @@
-package i5.las2peer.services.servicePackage;
+package i5.las2peer.services.$Lower_Resource_Name$;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 import i5.las2peer.p2p.LocalNode;
+import i5.las2peer.restMapper.RESTMapper;
+import i5.las2peer.restMapper.tools.ValidationResult;
+import i5.las2peer.restMapper.tools.XMLCheck;
 import i5.las2peer.security.ServiceAgent;
 import i5.las2peer.security.UserAgent;
+import i5.las2peer.services.$Lower_Resource_Name$.$Resource_Name$;
 import i5.las2peer.testing.MockAgentFactory;
 import i5.las2peer.webConnector.WebConnector;
 import i5.las2peer.webConnector.client.ClientResponse;
 import i5.las2peer.webConnector.client.MiniClient;
 
 import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 import java.io.PrintStream;
 
 import org.junit.AfterClass;
@@ -19,7 +24,8 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 /**
- * Example Test Class demonstrating a basic JUnit test structure.
+ * 
+ * Test Class providing a basic JUnit test structure.
  *
  */
 public class ServiceTest {
@@ -34,16 +40,18 @@ public class ServiceTest {
   private static UserAgent testAgent;
   private static final String testPass = "adamspass";
 
-  private static final String testTemplateService = TemplateService.class.getCanonicalName();
+  private static final String testTemplateService = $Resource_Name$.class.getCanonicalName();
 
-  private static final String mainPath = "/example/";
+  private static final String mainPath = "/$Resource_Path$";
 
   /**
+   * 
    * Called before the tests start.
    * 
    * Sets up the node and initializes connector and users that can be used throughout the tests.
    * 
    * @throws Exception
+   * 
    */
   @BeforeClass
   public static void startServer() throws Exception {
@@ -79,10 +87,12 @@ public class ServiceTest {
   }
 
   /**
+   * 
    * Called after the tests have finished. Shuts down the server and prints out the connector log
    * file for reference.
    * 
    * @throws Exception
+   * 
    */
   @AfterClass
   public static void shutDownServer() throws Exception {
@@ -102,63 +112,32 @@ public class ServiceTest {
 
   }
 
-  /**
-   * 
-   * Tests the validation method.
-   * 
-   */
-  @Test
-  public void testValidateLogin() {
-    MiniClient c = new MiniClient();
-    c.setAddressPort(HTTP_ADDRESS, HTTP_PORT);
-
-    try {
-      c.setLogin(Long.toString(testAgent.getId()), testPass);
-      ClientResponse result = c.sendRequest("GET", mainPath + "validation", "");
-      assertEquals(200, result.getHttpCode());
-      assertTrue(result.getResponse().trim().contains("adam")); // login name is part of response
-      System.out.println("Result of 'testValidateLogin': " + result.getResponse().trim());
-    } catch (Exception e) {
-      e.printStackTrace();
-      fail("Exception: " + e);
-    }
-
-  }
 
   /**
    * 
-   * Test the example method that consumes one path parameter which we give the value "testInput" in
-   * this test.
+   * Test the $Microservice_Name$ for valid rest mapping. Important for development.
    * 
-   */
-  @Test
-  public void testExampleMethod() {
-    MiniClient c = new MiniClient();
-    c.setAddressPort(HTTP_ADDRESS, HTTP_PORT);
-
-    try {
-      c.setLogin(Long.toString(testAgent.getId()), testPass);
-      ClientResponse result = c.sendRequest("POST", mainPath + "myResourcePath/testInput", ""); // testInput
-                                                                                                // is
-                                                                                                // the
-                                                                                                // pathParam
-      assertEquals(200, result.getHttpCode());
-      assertTrue(result.getResponse().trim().contains("testInput")); // "testInput" name is part of
-                                                                     // response
-      System.out.println("Result of 'testExampleMethod': " + result.getResponse().trim());
-    } catch (Exception e) {
-      e.printStackTrace();
-      fail("Exception: " + e);
-    }
-  }
-
-  /**
-   * Test the TemplateService for valid rest mapping. Important for development.
    */
   @Test
   public void testDebugMapping() {
-    TemplateService cl = new TemplateService();
-    assertTrue(cl.debugMapping());
+    $Resource_Name$ cl = new $Resource_Name$();
+    String XML_LOCATION = "./restMapping.xml";
+    String xml = cl.getRESTMapping();
+
+    try {
+      RESTMapper.writeFile(XML_LOCATION, xml);
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
+
+    XMLCheck validator = new XMLCheck();
+    ValidationResult result = validator.validate(xml);
+
+    if (!result.isValid())
+      fail();
+    }
   }
 
+  $Service_Test_Methods$
+  
 }
