@@ -3,14 +3,6 @@ package i5.las2peer.services.servicePackage;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
-
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
-
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
-import org.junit.Test;
-
 import i5.las2peer.p2p.LocalNode;
 import i5.las2peer.security.ServiceAgent;
 import i5.las2peer.security.UserAgent;
@@ -19,11 +11,15 @@ import i5.las2peer.webConnector.WebConnector;
 import i5.las2peer.webConnector.client.ClientResponse;
 import i5.las2peer.webConnector.client.MiniClient;
 
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Test;
 
 /**
  * Example Test Class demonstrating a basic JUnit test structure.
- * 
- * 
  *
  */
 public class ServiceTest {
@@ -38,10 +34,9 @@ public class ServiceTest {
   private static UserAgent testAgent;
   private static final String testPass = "adamspass";
 
-  private static final String testServiceClass = ServiceClass.class.getCanonicalName();
+  private static final String testTemplateService = TemplateService.class.getCanonicalName();
 
-  private static final String mainPath = "example/";
-
+  private static final String mainPath = "/example/";
 
   /**
    * Called before the tests start.
@@ -58,7 +53,7 @@ public class ServiceTest {
     node.storeAgent(MockAgentFactory.getAdam());
     node.launch();
 
-    ServiceAgent testService = ServiceAgent.generateNewAgent(testServiceClass, "a pass");
+    ServiceAgent testService = ServiceAgent.generateNewAgent(testTemplateService, "a pass");
     testService.unlockPrivateKey("a pass");
 
     node.registerReceiver(testService);
@@ -82,7 +77,6 @@ public class ServiceTest {
     }
 
   }
-
 
   /**
    * Called after the tests have finished. Shuts down the server and prints out the connector log
@@ -108,7 +102,6 @@ public class ServiceTest {
 
   }
 
-
   /**
    * 
    * Tests the validation method.
@@ -131,7 +124,6 @@ public class ServiceTest {
     }
 
   }
-
 
   /**
    * 
@@ -158,15 +150,15 @@ public class ServiceTest {
       e.printStackTrace();
       fail("Exception: " + e);
     }
-
   }
 
   /**
-   * Test the ServiceClass for valid rest mapping. Important for development.
+   * Test the TemplateService for valid rest mapping. Important for development.
    */
   @Test
   public void testDebugMapping() {
-    ServiceClass cl = new ServiceClass();
+    TemplateService cl = new TemplateService();
     assertTrue(cl.debugMapping());
   }
+
 }
