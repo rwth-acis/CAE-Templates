@@ -1,0 +1,20 @@
+  /**
+   * 
+   * $HTTPMethod_Name$
+   *
+   */
+  $HTTP_Method_Type$
+  @Path("$HTTPMethod_Path$")
+  @Produces(MediaType.APPLICATION_JSON)
+  @Consumes(MediaType.APPLICATION_JSON)
+  @ApiResponses(value = {
+      @ApiResponse(code = HttpURLConnection.HTTP_OK, message = "")
+  })
+  @ApiOperation(value = "$HTTP_METHOD_NAME$",
+      notes = "")
+  public HttpResponse $HTTP_METHOD_NAME$($HTTP_METHOD_PARAMETERS$) {
+          return new HttpResponse("ReturnObject", HttpURLConnection.OK);
+  }
+
+
+$Service_Methods$
