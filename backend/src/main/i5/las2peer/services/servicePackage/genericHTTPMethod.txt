@@ -10,10 +10,10 @@
   @ApiResponses(value = {
       @ApiResponse(code = HttpURLConnection.HTTP_OK, message = "")
   })
-  @ApiOperation(value = "$HTTP_METHOD_NAME$",
+  @ApiOperation(value = "$HTTPMETHOD_NAME$",
       notes = "")
   public HttpResponse $HTTP_METHOD_NAME$($HTTP_METHOD_PARAMETERS$) {
-          return new HttpResponse("ReturnObject", HttpURLConnection.OK);
+    return new HttpResponse("ReturnObject", HttpURLConnection.OK);
   }
 
 

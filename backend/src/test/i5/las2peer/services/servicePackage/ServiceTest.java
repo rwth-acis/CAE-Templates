@@ -44,6 +44,7 @@ public class ServiceTest {
 
   private static final String mainPath = "/$Resource_Path$";
 
+  
   /**
    * 
    * Called before the tests start.
@@ -86,6 +87,7 @@ public class ServiceTest {
 
   }
 
+  
   /**
    * 
    * Called after the tests have finished. Shuts down the server and prints out the connector log
