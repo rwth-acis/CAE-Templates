@@ -1,0 +1,3 @@
+    $HTTPResponse_ResultType$ $HttpResponse_ResultName$ = null;
+    HttpResponse $HttpResponse_Name$ = new HttpResponse($HttpResponse_ResultName$, HttpURLConnection.$HttpResponse_Code$);
+    return $HttpResponse_Name$;

@@ -5,15 +5,15 @@
    */
   $HTTP_Method_Type$
   @Path("$HTTPMethod_Path$")
-  @Produces(MediaType.APPLICATION_JSON)
-  @Consumes(MediaType.APPLICATION_JSON)
+  $HTTPMethod_Produces$
+  $HTTPMethod_Consumes$
   @ApiResponses(value = {
-      @ApiResponse(code = HttpURLConnection.HTTP_OK, message = "")
+      $HTTPMethod_Api_Responses$
   })
   @ApiOperation(value = "$HTTPMethod_Name$",
       notes = "")
-  public HttpResponse $HTTPMethod_Name$($HTTP_METHOD_PARAMETERS$) {
-    return new HttpResponse("ReturnObject", HttpURLConnection.OK);
+  public HttpResponse $HTTPMethod_Name$($HttpMethod_Parameters$) {
+    $HTTPMethod_Responses$
   }
 
 
