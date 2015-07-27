@@ -94,7 +94,6 @@ $Service_Methods$
     try {
       result = RESTMapper.getMethodsAsXML(this.getClass());
     } catch (Exception e) {
-
       e.printStackTrace();
     }
     return result;
