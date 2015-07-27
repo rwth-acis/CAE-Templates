@@ -8,11 +8,11 @@
   $HTTPMethod_Produces$
   $HTTPMethod_Consumes$
   @ApiResponses(value = {
-      $HTTPMethod_Api_Responses$
+$HTTPMethod_Api_Responses$
   })
   @ApiOperation(value = "$HTTPMethod_Name$",
       notes = "")
-  public HttpResponse $HTTPMethod_Name$($HttpMethod_Parameters$) {
+  public HttpResponse $HTTPMethod_Name$($HTTPMethod_Parameters$) {
     $HTTPMethod_Responses$
   }
 
