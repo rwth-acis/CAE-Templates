@@ -1,5 +1,5 @@
     // $HTTPResponse_Name$
-   	boolean $HTTPResponse_Name$_condition = true;
+    boolean $HTTPResponse_Name$_condition = true;
     if($HTTPResponse_Name$_condition) {
       $HTTPResponse_ResultType$ $HTTPResponse_ResultName$ = null;
       HttpResponse $HTTPResponse_Name$ = new HttpResponse($HTTPResponse_ResultName$, HttpURLConnection.$HTTPResponse_Code$);
