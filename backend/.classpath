@@ -8,5 +8,6 @@
   $Database_Libraries$
   <classpathentry kind="lib" path="lib/las2peer-web-connector-0.4-SNAPSHOT.jar"/>
   <classpathentry kind="lib" path="lib/las2peer-rest-mapper-0.4-SNAPSHOT.jar"/>
+  <classpathentry kind="lib" path="lib/json-smart-1.1.1.jar"/>
   <classpathentry kind="output" path="output"/>
 </classpath>
