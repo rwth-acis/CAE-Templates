@@ -109,10 +109,8 @@ public void testDebugMapping() {
   } catch (IOException e) {
     e.printStackTrace();
   }
-
   XMLCheck validator = new XMLCheck();
   ValidationResult result = validator.validate(xml);
-
   if (!result.isValid()) {
     fail();
   }

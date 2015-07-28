@@ -8,4 +8,4 @@ etc/ivy/ivy.jar
 /service
 /etc/startup
 restMapping.xml
-/out
+/output
