@@ -44,7 +44,7 @@ import net.minidev.json.JSONValue;
  * outsourced to (imported) classes.
  * 
  */
-@Path("/$Relative_Resource_Path$")
+@Path("$Relative_Resource_Path$")
 @Version("$Microservice_Version$") // this annotation is used by the XML mapper
 @Api
 @SwaggerDefinition(

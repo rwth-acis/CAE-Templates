@@ -48,7 +48,7 @@ public class $Resource_Name$Test {
 
   private static final String testTemplateService = $Resource_Name$.class.getCanonicalName();
 
-  private static final String mainPath = "/$Resource_Path$";
+  private static final String mainPath = "$Resource_Path$";
 
 
   /**
