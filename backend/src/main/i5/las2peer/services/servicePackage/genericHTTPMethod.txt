@@ -5,6 +5,7 @@
 $HTTPMethod_Params$
    * 
    * @return HttpResponse
+   * 
    */
   $HTTP_Method_Type$
   @Path("$HTTPMethod_Path$")
