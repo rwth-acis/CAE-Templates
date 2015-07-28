@@ -10,7 +10,7 @@
     c.setAddressPort(HTTP_ADDRESS, HTTP_PORT);
     try {
       c.setLogin(Long.toString(testAgent.getId()), testPass);
-      ClientResponse result = c.sendRequest("$HTTP_Method_Type$", mainPath + "/$HTTPMethod_Path$/" +"/$HTTPMethod_Query_Params$", "$HTTPMethod_Content$",
+      ClientResponse result = c.sendRequest("$HTTP_Method_Type$", mainPath + "/$HTTPMethod_Path$/", "$HTTPMethod_Content$",
         MediaType.$HTTPMethod_Consumes$, MediaType.$HTTPMethod_Produces$, new Pair[] {});
       assertTrue(true); // change here
       System.out.println("Result of 'test$HTTP_Method_Name$': " + result.getResponse().trim());
