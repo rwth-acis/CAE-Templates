@@ -1,6 +1,5 @@
 package i5.las2peer.services.$Lower_Resource_Name$;
 
-import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -22,8 +21,6 @@ import i5.las2peer.restMapper.HttpResponse;
 import i5.las2peer.restMapper.MediaType;
 import i5.las2peer.restMapper.RESTMapper;
 import i5.las2peer.restMapper.annotations.Version;
-import i5.las2peer.restMapper.tools.ValidationResult;
-import i5.las2peer.restMapper.tools.XMLCheck;
 import i5.las2peer.services.$Lower_Resource_Name$.database.DatabaseManager;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
