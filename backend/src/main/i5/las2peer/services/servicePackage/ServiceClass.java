@@ -1,9 +1,6 @@
 package i5.las2peer.services.$Lower_Resource_Name$;
 
 import java.net.HttpURLConnection;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 
 import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
@@ -35,6 +32,7 @@ import io.swagger.models.Swagger;
 import io.swagger.util.Json;
 import net.minidev.json.JSONObject;
 import net.minidev.json.JSONValue;
+
 
 /**
  * 

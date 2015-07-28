@@ -97,28 +97,28 @@ public class $Resource_Name$Test {
 $Test_Methods$
 
 
-/**
- * 
- * Test the $Microservice_Name$ for valid rest mapping. Important for development.
- * 
- */
-@Test
-public void testDebugMapping() {
-  $Resource_Name$ cl = new $Resource_Name$();
-  String XML_LOCATION = "./restMapping.xml";
-  String xml = cl.getRESTMapping();
-
-  try {
-    RESTMapper.writeFile(XML_LOCATION, xml);
-  } catch (IOException e) {
-    e.printStackTrace();
+  /**
+   * 
+   * Test the $Microservice_Name$ for valid rest mapping. Important for development.
+   * 
+   */
+  @Test
+  public void testDebugMapping() {
+    $Resource_Name$ cl = new $Resource_Name$();
+    String XML_LOCATION = "./restMapping.xml";
+    String xml = cl.getRESTMapping();
+  
+    try {
+      RESTMapper.writeFile(XML_LOCATION, xml);
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
+    XMLCheck validator = new XMLCheck();
+    ValidationResult result = validator.validate(xml);
+    if (!result.isValid()) {
+      fail();
+    }
   }
-  XMLCheck validator = new XMLCheck();
-  ValidationResult result = validator.validate(xml);
-  if (!result.isValid()) {
-    fail();
-  }
-}
 
 
   /**
