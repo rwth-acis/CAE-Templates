@@ -1,0 +1,23 @@
+  /**
+   * 
+   * Test for the $HTTP_Method_Name$ method.
+   * 
+   */
+  @Test
+  public void test$HTTP_Method_Name$()
+  {
+    MiniClient c = new MiniClient();
+    c.setAddressPort(HTTP_ADDRESS, HTTP_PORT);
+    try {
+      c.setLogin(Long.toString(testAgent.getId()), testPass);
+      ClientResponse result = c.sendRequest("GET", mainPath + "/$HTTPMethod_Path$", "");
+      assertTrue(true); // change here
+      System.out.println("Result of 'test$HTTP_Method_Name$': " + result.getResponse().trim());
+    } catch (Exception e) {
+      e.printStackTrace();
+      fail("Exception: " + e);
+    }
+  }
+
+
+$Test_Methods$

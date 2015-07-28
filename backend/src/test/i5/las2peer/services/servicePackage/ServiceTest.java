@@ -1,6 +1,5 @@
 package i5.las2peer.services.$Lower_Resource_Name$;
 
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 import i5.las2peer.p2p.LocalNode;
@@ -91,7 +90,7 @@ public class $Resource_Name$Test {
   }
 
 
-  $Test_Methods$
+$Test_Methods$
 
 
   /**
