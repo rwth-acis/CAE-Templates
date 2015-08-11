@@ -38,7 +38,7 @@ var init = function() {
     // define your reactions on incoming iwc events here
     console.log(intent);
   };
-  client = new Las2peerWidgetLibrary("$MICROSERVICE_ENDPOINT_URL$", iwcCallback);
+  client = new Las2peerWidgetLibrary("$Microservice_Endpoint_Url$", iwcCallback);
 }
 
 $(document).ready(function() {

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Module>
-  <ModulePrefs title="$WIDGET_TITLE$" description="$WIDGET_DESCRIPTION$"
-    author="$WIDGET_AUTHOR_NAME$" author_email="WIDGET_AUTHOR_MAIL$"
-    width="$WIDGET_WIDTH$" height="$WIDGETH_HEIGHT$">
+  <ModulePrefs title="$Widget_Title$" description="$Widget_Description$"
+    author="$Widget_Author_Name$" author_email="Widget_Author_Mail$"
+    width="$Widget_Width$" height="$Widget_Height$">
 
     <Require feature="opensocial-0.8"></Require>
     <Require feature="openapp"></Require>
@@ -79,11 +79,11 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <!-- Inter Widget Communication library import-->
   <script type="text/javascript" src="http://dbis.rwth-aachen.de/gadgets/iwc/lib/iwc.js"></script>
   <!-- style information -->
-  <link rel="stylesheet" href="$WIDGET_HOME$/css/style.css">
+  <link rel="stylesheet" href="$Widget_Home$/css/style.css">
   <!-- import the client library -->
-  <script type="text/javascript" src="$WIDGET_HOME$/js/las2peerWidgetLibrary.js"></script>
+  <script type="text/javascript" src="$Widget_Home$/js/las2peerWidgetLibrary.js"></script>
   <!-- import application script -->
-  <script type="text/javascript" src="$WIDGET_HOME$/js/applicationScript.js"></script>
+  <script type="text/javascript" src="$Widget_Home$/js/applicationScript.js"></script>
 
   <!-- Additional widget specific imports -->
   
@@ -91,7 +91,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 <body>
 
   <!-- container for actual page content -->
-  <div class="container" style="margin-top:20px">
+  <div class="container" id="main-content">
   </div>
 
 </body>
