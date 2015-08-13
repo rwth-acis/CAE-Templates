@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Module>
   <ModulePrefs title="$Widget_Title$" description="$Widget_Description$"
-    author="$Widget_Author_Name$" author_email="Widget_Author_Mail$"
+    author="$Widget_Developer_Name$" author_email="$Widget_Developer_Mail$"
     width="$Widget_Width$" height="$Widget_Height$">
 
     <Require feature="opensocial-0.8"></Require>
