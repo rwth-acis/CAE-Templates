@@ -1,0 +1,2 @@
+<$Element_Type$ id="$Element_Id$">$Closing_Element$
+$Main_Content$
