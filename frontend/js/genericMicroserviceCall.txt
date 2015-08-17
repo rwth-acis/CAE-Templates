@@ -1,0 +1,8 @@
+  client.sendRequest("$Method_Type$", "$Method_Path$", "", "", {},
+  function(data, type) {
+    console.log(data);
+  },
+  function(error) {
+    console.log(error);
+  });
+  $Function_Body$
