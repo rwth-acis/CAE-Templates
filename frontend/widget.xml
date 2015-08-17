@@ -92,7 +92,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
   <!-- container for actual page content -->
   <div class="container" id="main-content">
-  $Main_Content$
+$Main_Content$
   </div>
 
 </body>
