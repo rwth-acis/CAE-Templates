@@ -1,4 +1,4 @@
-  client.sendRequest("$Method_Type$", "$Method_Path$", "", "", {},
+  client.sendRequest("$Method_Type$", "$Method_Path$", $Content$, "$Content_Type$", {},
   function(data, type) {
     console.log(data);
   },
