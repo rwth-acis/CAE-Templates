@@ -41,6 +41,7 @@ $IWC_Responses$
   client = new Las2peerWidgetLibrary("$Microservice_Endpoint_Url$", iwcCallback);
 }
 
+
 $Functions$
 
 $(document).ready(function() {
