@@ -36,7 +36,7 @@ var init = function() {
   var iwcCallback = function(intent) {
     // define your reactions on incoming iwc events here
     console.log(intent);
-    $IWC_Responses$
+$IWC_Responses$
   };
   client = new Las2peerWidgetLibrary("$Microservice_Endpoint_Url$", iwcCallback);
 }
