@@ -39,6 +39,7 @@ var init = function() {
 $IWC_Responses$
   };
   client = new Las2peerWidgetLibrary("$Microservice_Endpoint_Url$", iwcCallback);
+$Events$
 }
 
 
