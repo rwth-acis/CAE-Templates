@@ -1,4 +1,5 @@
   $('#$Html_Element_Id$').on('$Event_Type$', function() {
+    $Parameter_Init$
     $Function_Name$($Function_Parameter$);
   })
 $Events$
