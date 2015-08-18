@@ -1,0 +1,4 @@
+    if (intent.action == "$Intent_Action$") {
+      $Function_Name$(intent.data);
+    }
+$IWC_Responses$
