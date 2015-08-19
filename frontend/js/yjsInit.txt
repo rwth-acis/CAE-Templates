@@ -10,4 +10,5 @@ $Variable_Observe_Code$
   connector.whenSynced(function(){
     if(y.val("textfield") == null){
       y.val("textfield",new Y.Text(""))
-  }
+    }
+  })
