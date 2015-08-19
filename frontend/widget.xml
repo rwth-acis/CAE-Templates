@@ -77,16 +77,17 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <!-- OpenApp import -->
   <script type="text/javascript" src="http://open-app.googlecode.com/files/openapp.js"></script>
   <!-- Inter Widget Communication library import-->
-  <script type="text/javascript" src="http://dbis.rwth-aachen.de/gadgets/iwc/lib/iwc.js"></script>
+  <script type="text/javascript" src="$Widget_Home$/js/lib/iwc.js"></script>
   <!-- style information -->
   <link rel="stylesheet" href="$Widget_Home$/css/style.css">
   <!-- import the client library -->
-  <script type="text/javascript" src="$Widget_Home$/js/las2peerWidgetLibrary.js"></script>
+  <script type="text/javascript" src="$Widget_Home$/js/lib/las2peerWidgetLibrary.js"></script>
   <!-- import application script -->
   <script type="text/javascript" src="$Widget_Home$/js/applicationScript.js"></script>
 
   <!-- Additional widget specific imports -->
-  
+$Additional_Imports$
+
 </head>
 <body>
 
