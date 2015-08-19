@@ -1,9 +1,9 @@
-    connector = new Y.XMPP().join("CAERoom", {syncMode: "syncAll"});
-    y = new Y(connector);
-    $Variable_Init$
-    y.observe(function(events){
-      for(var i=0; i<events.length; i++){
-        var event = events[i];
-    $Variable_Observe_Code$
-      }
-    });
+  connector = new Y.XMPP().join("CAERoom", {syncMode: "syncAll"});
+  y = new Y(connector);
+$Variable_Init$
+  y.observe(function(events){
+    for(var i=0; i<events.length; i++){
+      var event = events[i];
+$Variable_Observe_Code$
+    }
+  });
