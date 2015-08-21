@@ -1,5 +1,6 @@
 package i5.las2peer.services.$Lower_Resource_Name$;
 
+$Additional_Import$
 import java.net.HttpURLConnection;
 
 import javax.ws.rs.DELETE;
@@ -18,7 +19,7 @@ import i5.las2peer.restMapper.HttpResponse;
 import i5.las2peer.restMapper.MediaType;
 import i5.las2peer.restMapper.RESTMapper;
 import i5.las2peer.restMapper.annotations.Version;
-import i5.las2peer.services.$Lower_Resource_Name$.database.DatabaseManager;
+$Database_Import$
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
