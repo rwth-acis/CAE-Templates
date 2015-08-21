@@ -2,7 +2,7 @@
 -- Table structure for table $Database_Table_Name$.
 --
 CREATE TABLE $Database_Schema$.$Database_Table_Name$ (
-  $Column$
+$Column$
   CONSTRAINT $PK_Name$_PK PRIMARY KEY ($PK_Name$)
 );
 
