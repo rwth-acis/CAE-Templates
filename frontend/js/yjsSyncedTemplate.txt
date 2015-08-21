@@ -1,0 +1,4 @@
+    if(y.val("$Element_Id$") == null){
+      y.val("$Element_Id$",new Y.Text(""))
+    }
+$Sync_Code$
