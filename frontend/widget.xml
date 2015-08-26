@@ -87,15 +87,15 @@ $Additional_Imports$
   <script type="text/javascript" src="$Widget_Home$/js/lib/las2peerWidgetLibrary.js"></script>
   <!-- import application script -->
   <script type="text/javascript" src="$Widget_Home$/js/applicationScript.js"></script>
-  
+
 </head>
 <body>
 
   <!-- container for actual page content -->
   <div class="container" id="main-content">
-  
+
 $Main_Content$
-  
+
   </div>
 
 </body>
