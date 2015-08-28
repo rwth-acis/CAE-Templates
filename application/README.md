@@ -1,4 +1,4 @@
-![CAE](https://github.com/$Organization_Name$/$Repository_Name$/blob/gh-pages/img/logo.png)  
+![CAE](https://github.com/$Organization_Name$/$Repository_Name$/blob/master/img/logo.png)  
 
 $Application_Name$
 ===================
