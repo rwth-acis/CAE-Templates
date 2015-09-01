@@ -67,6 +67,9 @@ function Las2peerWidgetLibrary(endpointUrl, iwcCallback) {
  *          customHeaders a JSON string with additional header parameters to be
  *          sent
  * @param {string}
+ *          authenticate a boolean, fetches the oidc token from localstorage and
+            sends it with the request if true
+ * @param {string}
  *          successCallback a callback function invoked in case the request
  *          succeeded. Expects two parameters "data" and "type" where "data"
  *          represents the content of the response and "type" describes the
@@ -77,24 +80,13 @@ function Las2peerWidgetLibrary(endpointUrl, iwcCallback) {
  *          occurred.
  */
 Las2peerWidgetLibrary.prototype.sendRequest = function(method, relativePath,
-        content, mime, customHeaders, successCallback, errorCallback) {
+        content, mime, customHeaders, authenticate, successCallback, errorCallback) {
   var mtype = "text/plain; charset=UTF-8"
   if (mime !== 'undefined') {
     mtype = mime;
   }
 
   var rurl = this._serviceEndpoint + "/" + relativePath;
-
-  if (!this.isAnonymous()) {
-    console.log("Authenticated request");
-    if (rurl.indexOf("\?") > 0) {
-      rurl += "&access_token=" + window.localStorage["access_token"];
-    } else {
-      rurl += "?access_token=" + window.localStorage["access_token"];
-    }
-  } else {
-    console.log("Anonymous request... ");
-  }
 
   var ajaxObj = {
     url: rurl,
@@ -103,7 +95,6 @@ Las2peerWidgetLibrary.prototype.sendRequest = function(method, relativePath,
     contentType: mtype,
     crossDomain: true,
     headers: {},
-
     error: function(xhr, errorType, error) {
       console.log(error);
       var errorText = error;
@@ -121,19 +112,16 @@ Las2peerWidgetLibrary.prototype.sendRequest = function(method, relativePath,
   if (customHeaders !== undefined && customHeaders !== null) {
     $.extend(ajaxObj.headers, customHeaders);
   }
-
-  $.ajax(ajaxObj);
-};
-
-/**
- * determines if user is authenticated via OpenID Connect or not.
- */
-Las2peerWidgetLibrary.prototype.isAnonymous = function() {
-  if (typeof oidc_userinfo !== 'undefined') {
-    return false;
+  if (authenticate === true) {
+    console.log("Authenticated request...");
+    var tokenHeader = { 'access_token': window.localStorage["access_token"] }
+    $.extend(ajaxObj.headers, tokenHeader);
+    var endPointHeader = { 'oidc_provider': 'https://accounts.google.com' }
+    $.extend(ajaxObj.headers, endPointHeader);
   } else {
-    return true;
+    console.log("Anonymous request...");
   }
+  $.ajax(ajaxObj);
 };
 
 Las2peerWidgetLibrary.prototype.sendIntent = function(action, data, global) {
