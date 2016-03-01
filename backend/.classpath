@@ -12,5 +12,9 @@
   <classpathentry kind="lib" path="lib/jsr311-api-1.1.1.jar"/>
   <classpathentry kind="lib" path="lib/jackson-core-2.4.5.jar"/>
   <classpathentry kind="lib" path="lib/jackson-databind-2.4.5.jar"/>
+  <classpathentry kind="lib" path="lib/swagger-annotations-1.5.4.jar"/>
+	<classpathentry kind="lib" path="lib/swagger-core-1.5.4.jar"/>
+	<classpathentry kind="lib" path="lib/swagger-jaxrs-1.5.4.jar"/>
+	<classpathentry kind="lib" path="lib/swagger-models-1.5.4.jar"/>
   <classpathentry kind="output" path="output"/>
 </classpath>
