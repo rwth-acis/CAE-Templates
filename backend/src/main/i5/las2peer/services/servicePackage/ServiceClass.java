@@ -32,8 +32,8 @@ import io.swagger.annotations.SwaggerDefinition;
 import io.swagger.jaxrs.Reader;
 import io.swagger.models.Swagger;
 import io.swagger.util.Json;
-import net.minidev.json.JSONObject;
-import net.minidev.json.JSONValue;
+import org.json.simple.JSONObject;
+import org.json.simple.JSONValue;
 
 
 /**
