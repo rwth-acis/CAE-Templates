@@ -1,4 +1,23 @@
-  connector = new Y.XMPP().join("cae-room", {syncMode: "syncAll"});
+Y({
+  db: {
+    name: 'memory'
+  },
+  connector: {
+    name: 'websockets-client',
+    room: 'cae-room'
+  },
+  share: {
+    $Variable_Init$: 'Text' // y.share.textarea is of type Y.Text
+  }
+}).then(function (y) {
+  window.yTextarea = y
+
+  // bind the textarea to a shared text element
+  y.share.$Element_Id$.bind(document.getElementById('$Element_Id$'))
+  // thats it..
+})
+
+/**  connector = new Y.XMPP().join("cae-room", {syncMode: "syncAll"});
   y = new Y(connector);
 $Variable_Init$
   y.observe(function(events){
@@ -9,4 +28,4 @@ $Variable_Observe_Code$
   });
   connector.whenSynced(function(){
 $Sync_Code$
-  })
+  }) **/
