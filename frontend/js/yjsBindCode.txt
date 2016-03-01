@@ -1,4 +1,0 @@
-      if(event.name === "$Element_Id$" && event.type !== "delete"){
-        y.val("$Element_Id$").bind($Element_Id$);
-      }
-$Variable_Observe_Code$
