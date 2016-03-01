@@ -7,25 +7,12 @@ Y({
     room: 'cae-room'
   },
   share: {
-    $Variable_Init$: 'Text' // y.share.textarea is of type Y.Text
+    $Variable_Init$
   }
 }).then(function (y) {
   window.yTextarea = y
 
-  // bind the textarea to a shared text element
-  y.share.$Element_Id$.bind(document.getElementById('$Element_Id$'))
-  // thats it..
+  $Share_Element$
+
 })
 
-/**  connector = new Y.XMPP().join("cae-room", {syncMode: "syncAll"});
-  y = new Y(connector);
-$Variable_Init$
-  y.observe(function(events){
-    for(var i=0; i<events.length; i++){
-      var event = events[i];
-$Variable_Observe_Code$
-    }
-  });
-  connector.whenSynced(function(){
-$Sync_Code$
-  }) **/
