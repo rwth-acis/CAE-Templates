@@ -1,3 +1,5 @@
   <script src="$Widget_Home$/js/lib/y.js"></script>
+  <script src="$Widget_Home$/js/lib/y-array.js"></script>
   <script src="$Widget_Home$/js/lib/y-text.js"></script>
-  <script src="$Widget_Home$/js/lib/y-xmpp.js"></script>
+  <script src="$Widget_Home$/js/lib/y-websockets-client.js"></script>  
+  <script src="$Widget_Home$/js/lib/y-memory.js"></script>
