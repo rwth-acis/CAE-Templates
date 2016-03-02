@@ -46,8 +46,9 @@ public class $Resource_Name$Test {
 
   private static UserAgent testAgent;
   private static final String testPass = "adamspass";
-
-  private static final String testTemplateService = $Resource_Name$.class.getCanonicalName();
+  
+  // version does not matter in tests
+  private static final ServiceNameVersion testTemplateService = new ServiceNameVersion($Resource_Name$.class.getCanonicalName(),"0.1");
 
   private static final String mainPath = "$Resource_Path$";
 
@@ -69,7 +70,7 @@ public class $Resource_Name$Test {
     node.storeAgent(MockAgentFactory.getAdam());
     node.launch();
 
-    ServiceAgent testService = ServiceAgent.generateNewAgent(testTemplateService, "a pass");
+    ServiceAgent testService = ServiceAgent.createServiceAgent(testTemplateService, "a pass");
     testService.unlockPrivateKey("a pass");
 
     node.registerReceiver(testService);
