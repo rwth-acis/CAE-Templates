@@ -6,6 +6,7 @@ Y({
     name: 'websockets-client',
     room: 'cae-room'
   },
+  sourceDir: "http://y-js.org/bower_components",
   share: {
     $Variable_Init$
   }
