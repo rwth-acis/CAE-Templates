@@ -1,0 +1,151 @@
+{
+  "traces": {
+  },
+  "traceSegments": [
+    {
+      "length": 71,
+      "id": "$Widget_Title$before[0]",
+      "type": "protected"
+    },
+    {
+      "length": 14,
+      "id": "$Widget_Title$",
+      "type": "protected"
+    },
+    {
+      "length": 15,
+      "id": "$Widget_Description$before[0]",
+      "type": "protected"
+    },
+    {
+      "length": 20,
+      "id": "$Widget_Description$",
+      "type": "protected"
+    },
+    {
+      "length": 14,
+      "id": "$Widget_Developer_Name$before[0]",
+      "type": "protected"
+    },
+    {
+      "length": 23,
+      "id": "$Widget_Developer_Name$",
+      "type": "protected"
+    },
+    {
+      "length": 16,
+      "id": "$Widget_Developer_Mail$before[0]",
+      "type": "protected"
+    },
+    {
+      "length": 23,
+      "id": "$Widget_Developer_Mail$",
+      "type": "protected"
+    },
+    {
+      "length": 13,
+      "id": "$Widget_Width$before[0]",
+      "type": "protected"
+    },
+    {
+      "length": 14,
+      "id": "$Widget_Width$",
+      "type": "protected"
+    },
+    {
+      "length": 10,
+      "id": "$Widget_Height$before[0]",
+      "type": "protected"
+    },
+    {
+      "length": 15,
+      "id": "$Widget_Height$",
+      "type": "protected"
+    },
+    {
+      "length": 2437,
+      "id": "$Widget_Title$before[1]",
+      "type": "protected"
+    },
+    {
+      "length": 14,
+      "id": "$Widget_Title$",
+      "type": "protected"
+    },
+    {
+      "length": 602,
+      "id": "$Widget_Home$before[0]",
+      "type": "protected"
+    },
+    {
+      "length": 13,
+      "id": "$Widget_Home$",
+      "type": "protected"
+    },
+    {
+      "length": 548,
+      "id": "$Widget_Home$before[1]",
+      "type": "protected"
+    },
+    {
+      "length": 13,
+      "id": "$Widget_Home$",
+      "type": "protected"
+    },
+    {
+      "length": 108,
+      "id": "$Additional_Imports$before[0]",
+      "type": "protected"
+    },
+    {
+      "length": 20,
+      "id": "$Additional_Imports$",
+      "type": "protected"
+    },
+    {
+      "length": 1,
+      "id": "unprotected[0]before[0]",
+      "type": "protected"
+    },
+    {
+      "length": 1,
+      "id": "unprotected[0]",
+      "type": "unprotected"
+    },
+    {
+      "length": 75,
+      "id": "$Widget_Home$before[2]",
+      "type": "protected"
+    },
+    {
+      "length": 13,
+      "id": "$Widget_Home$",
+      "type": "protected"
+    },
+    {
+      "length": 119,
+      "id": "$Widget_Home$before[3]",
+      "type": "protected"
+    },
+    {
+      "length": 13,
+      "id": "$Widget_Home$",
+      "type": "protected"
+    },
+    {
+      "length": 143,
+      "id": "$Main_Content$before[0]",
+      "type": "protected"
+    },
+    {
+      "length": 14,
+      "id": "$Main_Content$",
+      "type": "protected"
+    },
+    {
+      "length": 60,
+      "id": "End",
+      "type": "protected"
+    }
+  ]
+}
