@@ -82,8 +82,8 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <script type="text/javascript" src="$Widget_Home$/js/lib/iwc.js"></script>
   <!-- additional widget specific imports (put your own imports here as well) -->
 $Additional_Imports$
-
-  <!-- import the client library -->
+-{
+}-  <!-- import the client library -->
   <script type="text/javascript" src="$Widget_Home$/js/lib/las2peerWidgetLibrary.js"></script>
   <!-- import application script -->
   <script type="text/javascript" src="$Widget_Home$/js/applicationScript.js"></script>
@@ -93,7 +93,6 @@ $Additional_Imports$
 
   <!-- container for actual page content -->
   <div class="container" id="main-content">
-
 $Main_Content$
  
   </div>
