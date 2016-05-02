@@ -1,8 +1,8 @@
 // $Function_Name$
-var $Function_Name$ = function($Function_Parameters$){
-$Function_Body$
-$Function_Return_Parameter$
+var $Function_Name$ = function($Function_Parameters$){-{
+
+}-$Function_Body$-{
+
+}-$Function_Return_Parameter$
 }
 
-
-$Functions$
