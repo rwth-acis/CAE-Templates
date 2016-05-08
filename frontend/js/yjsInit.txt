@@ -1,4 +1,4 @@
-Y({${
+Y({-{
   db: {
     name: 'memory'
   },
@@ -7,7 +7,7 @@ Y({${
     room: 'cae-room'
   },
   sourceDir: "http://y-js.org/bower_components",
-  }$share: {
+  }-share: {
     $Variable_Init$
   }
 }).then(function (y) {
