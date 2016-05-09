@@ -41,12 +41,12 @@ var init = function() {-{
 	
 }-  };
 -{
-}-  client = new Las2peerWidgetLibrary("$Microservice_Endpoint_Url$", iwcCallback);
+}-  client = new Las2peerWidgetLibrary("$Microservice_Endpoint_Url$", iwcCallback);-{
   
-$Yjs_Code$
+-}$Yjs_Code$-{
 
-$Events$
-
+-}$Events$-{
+}-
 }
 
 
