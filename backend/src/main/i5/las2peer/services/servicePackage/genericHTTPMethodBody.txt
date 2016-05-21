@@ -1,0 +1,4 @@
+$HTTPMethod_Casts$
+$Invocations$
+$HTTPMethod_Responses$
+    return null;
