@@ -14,10 +14,8 @@ $HTTPMethod_Params$
   @ApiResponses(value = {
 $HTTPMethod_Api_Responses$
   })
-  @ApiOperation(value = "$HTTPMethod_Name$", notes = "")
+  @ApiOperation(value = "$HTTPMethod_Name$", notes = "-{ }-")
   public HttpResponse $HTTPMethod_Name$($HTTPMethod_Parameters$) {
 -{$HTTPMethod_Body$}-
   }
 
-
-$Service_Methods$

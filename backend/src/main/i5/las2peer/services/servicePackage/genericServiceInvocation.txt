@@ -6,4 +6,3 @@ $Parameter_Init$
     } catch (Exception e) {
         e.printStackTrace();
     }
-$Invocations$
