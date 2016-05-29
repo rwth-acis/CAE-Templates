@@ -1,6 +1,6 @@
   /**
    * 
-   * $HTTPMethod_Name$
+   * -{$HTTPMethod_Name$}-
    * 
 $HTTPMethod_Params$
    * 
