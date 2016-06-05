@@ -1,8 +1,7 @@
-  client.sendRequest("$Method_Type$", "$Method_Path$", $Content$, "$Content_Type$", {}, $Authenticate$,
+  client.sendRequest("$Method_Type$", "$Method_Path$", $Content$, "$Content_Type$", -{{}}-, $Authenticate$,
   function(data, type) {
-    console.log(data);
+    -{console.log(data);}-
   },
   function(error) {
-    console.log(error);
+    -{console.log(error);}-
   });
-$Function_Body$
