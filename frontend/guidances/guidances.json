@@ -1,0 +1,10 @@
+{
+  "guidances":[
+    {
+      "type" : "HTML Element",
+      "regex" : "<[^>]+\\s+(id=[\"'][^\"']*[\"'])[^>]*>",
+      "group" : 1,
+      "message" : "HTML elements with ids need to be defined in the model. Nesting of HTML model elements is currently not supported."
+    }
+  ]
+}
