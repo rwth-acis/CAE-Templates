@@ -2,7 +2,7 @@
 var $Function_Name$ = function($Function_Parameters$){-{
 
 }-$Function_Body$-{
-
+  //Additional own javascript
 }-$Function_Return_Parameter$
 }
 
