@@ -8,12 +8,11 @@ Y({-{
   },
   sourceDir: "http://y-js.org/bower_components",
   }-share: {
-    $Variable_Init$
+$Variable_Init$-{ }-
   }
 }).then(function (y) {
   window.yTextarea = y
-
-  $Share_Element$
-
-})
+$Share_Element$
+-{ 
+}-})
 
