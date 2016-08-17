@@ -74,16 +74,15 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
   <!-- import jQuery for AJAX calls -->
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <!-- import Bootstrap for responsive UI -->
-  <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+ 
   <!-- OpenApp import -->
   <script type="text/javascript" src="http://open-app.googlecode.com/files/openapp.js"></script>
   <!-- inter widget communication library import -->
   <script type="text/javascript" src="$Widget_Home$/js/lib/iwc.js"></script>
   <!-- additional widget specific imports (put your own imports here as well) -->
 $Additional_Imports$
-
-  <!-- import the client library -->
+-{
+}-  <!-- import the client library -->
   <script type="text/javascript" src="$Widget_Home$/js/lib/las2peerWidgetLibrary.js"></script>
   <!-- import application script -->
   <script type="text/javascript" src="$Widget_Home$/js/applicationScript.js"></script>
@@ -93,9 +92,8 @@ $Additional_Imports$
 
   <!-- container for actual page content -->
   <div class="container" id="main-content">
-
 $Main_Content$
-
+ 
   </div>
 
 </body>

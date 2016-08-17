@@ -1,0 +1,61 @@
+{
+  "traces": {
+  },
+  "traceSegments": [
+    {
+      "length": 15,
+      "id": "$Widget_Home$before[0]",
+      "type": "protected"
+    },
+    {
+      "length": 13,
+      "id": "$Widget_Home$",
+      "type": "protected"
+    },
+    {
+      "length": 39,
+      "id": "$Widget_Home$before[1]",
+      "type": "protected"
+    },
+    {
+      "length": 13,
+      "id": "$Widget_Home$",
+      "type": "protected"
+    },
+    {
+      "length": 45,
+      "id": "$Widget_Home$before[2]",
+      "type": "protected"
+    },
+    {
+      "length": 13,
+      "id": "$Widget_Home$",
+      "type": "protected"
+    },
+    {
+      "length": 44,
+      "id": "$Widget_Home$before[3]",
+      "type": "protected"
+    },
+    {
+      "length": 13,
+      "id": "$Widget_Home$",
+      "type": "protected"
+    },
+    {
+      "length": 59,
+      "id": "$Widget_Home$before[4]",
+      "type": "protected"
+    },
+    {
+      "length": 13,
+      "id": "$Widget_Home$",
+      "type": "protected"
+    },
+    {
+      "length": 30,
+      "id": "End",
+      "type": "protected"
+    }
+  ]
+}

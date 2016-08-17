@@ -68,7 +68,9 @@ public class $Resource_Name$Test {
 
     // start node
     node = LocalNode.newNode();
-    node.storeAgent(MockAgentFactory.getAdam());
+    testAgent = MockAgentFactory.getAdam();
+    testAgent.unlockPrivateKey(testPass); // agent must be unlocked in order to be stored
+    node.storeAgent(testAgent);
     node.launch();
 
     ServiceAgent testService = ServiceAgent.createServiceAgent(testTemplateService, "a pass");
