@@ -86,32 +86,11 @@ public class $Resource_Name$Test {
     connector.start(node);
     Thread.sleep(1000); // wait a second for the connector to become ready
     testAgent = MockAgentFactory.getAdam();
-
-    connector.updateServiceList();
-    // avoid timing errors: wait for the repository manager to get all services before continuing
-    try {
-      System.out.println("waiting..");
-      Thread.sleep(10000);
-    } catch (InterruptedException e) {
-      e.printStackTrace();
-    }
-
   }
 
 
 $Test_Methods$
 
-
-  /**
-   *
-   * Test the $Microservice_Name$ for valid rest mapping. Important for development.
-   *
-   */
-  @Test
-  public void testDebugMapping() {
-    $Resource_Name$ cl = new $Resource_Name$();
-    assertTrue(cl.debugMapping());
-  }
 
 
   /**

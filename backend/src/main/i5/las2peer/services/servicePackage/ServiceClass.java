@@ -18,6 +18,7 @@ import i5.las2peer.api.Service;
 import i5.las2peer.restMapper.HttpResponse;
 import i5.las2peer.restMapper.MediaType;
 import i5.las2peer.restMapper.RESTMapper;
+import i5.las2peer.restMapper.RESTService;
 import i5.las2peer.restMapper.annotations.ContentParam;
 import i5.las2peer.restMapper.annotations.Version;
 $Database_Import$
@@ -56,7 +57,7 @@ import org.json.simple.JSONValue;
         contact = @Contact(name = "$Developer$", email = "CAEAddress@gmail.com") ,
         license = @License(name = "BSD",
             url = "$License_File_Address$") ) )
-public class $Resource_Name$ extends Service {
+public class $Resource_Name$ extends RESTService {
 
 
 $Database_Configuration$
@@ -74,62 +75,5 @@ $Database_Instantiation$
 
 
 $Service_Methods$
-
-
-  // //////////////////////////////////////////////////////////////////////////////////////
-  // Methods required by the LAS2peer framework.
-  // //////////////////////////////////////////////////////////////////////////////////////
-
-  /**
-  	 * Method for debugging purposes.
-  	 * Here the concept of restMapping validation is shown.
-  	 * It is important to check, if all annotations are correct and consistent.
-  	 * Otherwise the service will not be accessible by the WebConnector.
-  	 * Best to do it in the unit tests.
-  	 * To avoid being overlooked/ignored the method is implemented here and not in the test section.
-  	 * @return true, if mapping correct
-  	 */
-  	public boolean debugMapping() {
-  		String XML_LOCATION = "./restMapping.xml";
-  		String xml = getRESTMapping();
-
-  		try {
-  			RESTMapper.writeFile(XML_LOCATION, xml);
-  		} catch (IOException e) {
-  			// write error to logfile and console
-  			logger.log(Level.SEVERE, e.toString(), e);
-  			// create and publish a monitoring message
-  			L2pLogger.logEvent(this, Event.SERVICE_ERROR, e.toString());
-  		}
-
-  		XMLCheck validator = new XMLCheck();
-  		ValidationResult result = validator.validate(xml);
-
-  		if (result.isValid()) {
-  			return true;
-  		}
-  		return false;
-  	}
-
-  /**
-   *
-   * This method is needed for every RESTful application in LAS2peer. Please don't change.
-   *
-   * @return the mapping
-   *
-   */
-  public String getRESTMapping() {
-    String result = "";
-    try {
-      result = RESTMapper.getMethodsAsXML(this.getClass());
-    } catch (Exception e) {
-      // write error to logfile and console
-			logger.log(Level.SEVERE, e.toString(), e);
-			// create and publish a monitoring message
-			L2pLogger.logEvent(this, Event.SERVICE_ERROR, e.toString());
-    }
-    return result;
-  }
-
 
 }
