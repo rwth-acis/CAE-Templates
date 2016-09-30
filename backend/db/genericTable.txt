@@ -2,8 +2,5 @@
 -- Table structure for table $Database_Table_Name$.
 --
 CREATE TABLE $Database_Schema$.$Database_Table_Name$ (
-$Column$
-  CONSTRAINT $PK_Name$_PK PRIMARY KEY ($PK_Name$)
+$Column$CONSTRAINT $PK_Name$_PK PRIMARY KEY ($PK_Name$)
 );
-
-$Database_Table$

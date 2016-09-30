@@ -1,4 +1,4 @@
-Y({
+Y({-{
   db: {
     name: 'memory'
   },
@@ -7,13 +7,12 @@ Y({
     room: 'cae-room'
   },
   sourceDir: "http://y-js.org/bower_components",
-  share: {
-    $Variable_Init$
+  }-share: {
+$Variable_Init$-{ }-
   }
 }).then(function (y) {
   window.yTextarea = y
-
-  $Share_Element$
-
-})
+$Share_Element$
+-{ 
+}-})
 

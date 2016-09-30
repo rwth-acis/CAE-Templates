@@ -1,9 +1,7 @@
 $Parameter_Init$
     try {
       Object $Return_Variable$ = this.invokeServiceMethod(
-          "$Remove_Service_Name$", "$Remote_Service_Method$",
-          $Parameters$);
+          "$Remove_Service_Name$", "$Remote_Service_Method$"$Parameters$);
     } catch (Exception e) {
         e.printStackTrace();
     }
-$Invocations$

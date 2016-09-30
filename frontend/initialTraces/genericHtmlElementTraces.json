@@ -1,0 +1,52 @@
+{
+  "traces": {
+   
+  },
+  "traceSegments": [
+    {
+      "length": 1,
+      "id": "$Element_Type$before[0]",
+      "type": "protected"
+    },
+    {
+      "length": 14,
+      "id": "$Element_Type$",
+      "type": "protected"
+    },
+    {
+      "length": 5,
+      "id": "$Element_Id$before[0]",
+      "type": "protected"
+    },
+    {
+      "length": 12,
+      "id": "$Element_Id$",
+      "type": "protected"
+    },
+    {
+      "length": 1,
+      "id": "$Additional_Values$before[0]",
+      "type": "protected"
+    },
+    {
+      "length": 19,
+      "id": "$Additional_Values$",
+      "type": "protected"
+    },
+    {
+      "length": 1,
+      "id": "$Closing_Element$before[0]",
+      "type": "protected"
+    },
+    {
+      "length": 17,
+      "id": "$Closing_Element$",
+      "type": "protected"
+    },
+    {
+      "length": 0,
+      "id": "End",
+      "type": "protected"
+    }
+  ]
+}
