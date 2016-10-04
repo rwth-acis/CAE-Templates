@@ -241,6 +241,7 @@ agent-user-${las2peer_user3.name}.xml;${las2peer_user3.password}</echo>
   <!-- General Cleanup -->
   <target name="clean_before_build">
     <delete dir="${export}" />
+  	<delete dir="${startup}" />
     <delete file="${service}/${service.name}-${service.version}.jar" />
   </target>
 

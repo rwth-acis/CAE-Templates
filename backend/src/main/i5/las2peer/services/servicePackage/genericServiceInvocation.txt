@@ -1,6 +1,6 @@
 $Parameter_Init$
     try {
-      Object $Return_Variable$ = this.invokeServiceMethod(
+      Object $Return_Variable$ = Context.getCurrent().invoke(
           "$Remove_Service_Name$", "$Remote_Service_Method$"$Parameters$);
     } catch (Exception e) {
         e.printStackTrace();
