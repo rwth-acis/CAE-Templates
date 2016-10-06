@@ -11,16 +11,13 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.Consumes;
+import javax.ws.rs.core.Response;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 
 import i5.las2peer.api.Service;
-import i5.las2peer.restMapper.HttpResponse;
-import i5.las2peer.restMapper.MediaType;
-import i5.las2peer.restMapper.RESTMapper;
 import i5.las2peer.restMapper.RESTService;
-import i5.las2peer.restMapper.annotations.ContentParam;
-import i5.las2peer.restMapper.annotations.Version;
+import i5.las2peer.restMapper.annotations.ServicePath;
 $Database_Import$
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -30,9 +27,6 @@ import io.swagger.annotations.Contact;
 import io.swagger.annotations.Info;
 import io.swagger.annotations.License;
 import io.swagger.annotations.SwaggerDefinition;
-import io.swagger.jaxrs.Reader;
-import io.swagger.models.Swagger;
-import io.swagger.util.Json;
 import org.json.simple.JSONObject;
 import org.json.simple.JSONValue;
 -{ }-
