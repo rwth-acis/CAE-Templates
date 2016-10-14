@@ -3,4 +3,5 @@
 --
 CREATE TABLE $Database_Schema$.$Database_Table_Name$ (
 $Column$CONSTRAINT $PK_Name$_PK PRIMARY KEY ($PK_Name$)
+${ }$
 );
