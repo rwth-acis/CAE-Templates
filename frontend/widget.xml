@@ -75,8 +75,6 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <!-- import jQuery for AJAX calls -->
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
  
-  <!-- OpenApp import -->
-  <script type="text/javascript" src="http://open-app.googlecode.com/files/openapp.js"></script>
   <!-- inter widget communication library import -->
   <script type="text/javascript" src="$Widget_Home$/js/lib/iwc.js"></script>
   <!-- additional widget specific imports (put your own imports here as well) -->
