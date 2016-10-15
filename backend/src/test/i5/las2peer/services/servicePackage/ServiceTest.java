@@ -86,6 +86,8 @@ public class $Resource_Name$Test {
     connector.start(node);
     Thread.sleep(1000); // wait a second for the connector to become ready
     testAgent = MockAgentFactory.getAdam();
+    
+    -{ }-
   }
 
 
@@ -103,6 +105,8 @@ $Test_Methods$
    */
   @AfterClass
   public static void shutDownServer() throws Exception {
+	
+	-{ }-
 
     connector.stop();
     node.shutDown();
