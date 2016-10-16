@@ -4,7 +4,7 @@
    * 
 $HTTPMethod_Params$
    * 
-   * @return HttpResponse -{ }-
+   * @return Response -{ }-
    * 
    */
   $HTTP_Method_Type$
@@ -15,7 +15,7 @@ $HTTPMethod_Params$
 $HTTPMethod_Api_Responses$
   })
   @ApiOperation(value = "$HTTPMethod_Name$", notes = "-{ }-")
-  public HttpResponse $HTTPMethod_Name$($HTTPMethod_Parameters$) {
+  public Response $HTTPMethod_Name$($HTTPMethod_Parameters$) {
 $HTTPMethod_Casts$-{$HTTPMethod_Body$}-
   }
 
