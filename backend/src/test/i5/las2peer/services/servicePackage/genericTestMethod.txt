@@ -10,9 +10,8 @@
     try {
 $TestMethod_Variables$
       c.setLogin(Long.toString(testAgent.getId()), testPass);
-      @SuppressWarnings("unchecked")
       ClientResponse result = c.sendRequest("$HTTP_Method_Type$", mainPath + "/$HTTPMethod_Path$", -{$HTTPMethod_Content$}-,
-        $HTTPMethod_Consumes$, $HTTPMethod_Produces$, new Pair[] {});
+        $HTTPMethod_Consumes$, $HTTPMethod_Produces$, new HashMap<String,String>());
       -{assertTrue(true); // change here}-
       System.out.println("Result of 'test$HTTP_Method_Name$': " + result.getResponse().trim());
     } catch (Exception e) {
