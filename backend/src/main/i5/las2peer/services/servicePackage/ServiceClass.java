@@ -57,7 +57,7 @@ $Database_Instantiation$
 
   @Override
   public void initResources() {
-	registerResource(RootResource.class);
+	getResourceConfig().registerResource(RootResource.class);
   }
 
   // //////////////////////////////////////////////////////////////////////////////////////
