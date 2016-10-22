@@ -2,21 +2,21 @@
  * Copyright (c) 2015 Advanced Community Information Systems (ACIS) Group, Chair
  * of Computer Science 5 (Databases & Information Systems), RWTH Aachen
  * University, Germany All rights reserved.
- * 
+ *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are met:
- * 
+ *
  * Redistributions of source code must retain the above copyright notice, this
  * list of conditions and the following disclaimer.
- * 
+ *
  * Redistributions in binary form must reproduce the above copyright notice,
  * this list of conditions and the following disclaimer in the documentation
  * and/or other materials provided with the distribution.
- * 
+ *
  * Neither the name of the ACIS Group nor the names of its contributors may be
  * used to endorse or promote products derived from this software without
  * specific prior written permission.
- * 
+ *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
  * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
  * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
@@ -52,7 +52,7 @@ function Las2peerWidgetLibrary(endpointUrl, iwcCallback) {
 
 /**
  * Sends an AJAX request to a resource.
- * 
+ *
  * @override
  * @this {Las2peerWidgetLibrary}
  * @param {string}
@@ -116,7 +116,7 @@ Las2peerWidgetLibrary.prototype.sendRequest = function(method, relativePath,
     console.log("Authenticated request...");
     var tokenHeader = { 'access_token': window.localStorage["access_token"] }
     $.extend(ajaxObj.headers, tokenHeader);
-    var endPointHeader = { 'oidc_provider': 'https://accounts.google.com' }
+    var endPointHeader = { 'oidc_provider': 'https://api.learning-layers.eu/o/oauth2' }
     $.extend(ajaxObj.headers, endPointHeader);
   } else {
     console.log("Anonymous request...");
