@@ -116,7 +116,8 @@ Las2peerWidgetLibrary.prototype.sendRequest = function(method, relativePath,
     console.log("Authenticated request...");
     var tokenHeader = { 'access_token': window.localStorage["access_token"] }
     $.extend(ajaxObj.headers, tokenHeader);
-    var endPointHeader = { 'oidc_provider': 'https://api.learning-layers.eu/o/oauth2' }
+    //%%something%% placeholders can be replaced with the code generation service
+    var endPointHeader = { 'oidc_provider': '%%oidcProvider%%' }
     $.extend(ajaxObj.headers, endPointHeader);
   } else {
     console.log("Anonymous request...");
