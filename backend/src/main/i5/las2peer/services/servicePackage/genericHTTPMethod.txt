@@ -1,10 +1,10 @@
   /**
    * 
-   * $HTTPMethod_Name$
+   * -{$HTTPMethod_Name_Comment$}-
    * 
 $HTTPMethod_Params$
    * 
-   * @return HttpResponse
+   * @return Response -{ }-
    * 
    */
   $HTTP_Method_Type$
@@ -14,13 +14,8 @@ $HTTPMethod_Params$
   @ApiResponses(value = {
 $HTTPMethod_Api_Responses$
   })
-  @ApiOperation(value = "$HTTPMethod_Name$", notes = "")
-  public HttpResponse $HTTPMethod_Name$($HTTPMethod_Parameters$) {
-$HTTPMethod_Casts$
-$Invocations$
-$HTTPMethod_Responses$
-    return null;
+  @ApiOperation(value = "$HTTPMethod_Name$", notes = "-{ }-")
+  public Response $HTTPMethod_Name$($HTTPMethod_Parameters$) {
+$HTTPMethod_Casts$-{$HTTPMethod_Body$}-
   }
 
-
-$Service_Methods$
