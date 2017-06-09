@@ -46,6 +46,11 @@ var init = function() {-{
 }-
 }
 
+var initClient = function(y) {
+  this.client = new Las2peerWidgetLibrary("", iwcCallback, "127.0.0.1:8073", y);
+  console.log("Client initialized");
+};
+
 $Functions$-{
 }-$(document).ready(function() {
   init();-{
