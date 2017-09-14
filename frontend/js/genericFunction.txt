@@ -1,4 +1,5 @@
 // $Function_Name$
+$Metadata_Doc$
 var $Function_Name$ = function($Function_Parameters$){-{
 
 }-$Function_Body$
