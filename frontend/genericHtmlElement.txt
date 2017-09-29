@@ -1,3 +1,3 @@
 -{ }-
-<$Element_Type$ id='$Element_Id$' $Additional_Values$>-{$Element_Content$}-$Closing_Element$
+<$Element_Type$ id='$Element_Id$'-{$Additional_Values$}->-{$Element_Content$}-$Closing_Element$
 -{ }-
