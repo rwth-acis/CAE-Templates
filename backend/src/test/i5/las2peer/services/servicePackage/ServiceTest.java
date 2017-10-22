@@ -65,14 +65,14 @@ public class $Resource_Name$Test {
   public static void startServer() throws Exception {
 
     // start node
-    node = LocalNode.newNode();
+	node = new LocalNodeManager().newNode();
     testAgent = MockAgentFactory.getAdam();
-    testAgent.unlockPrivateKey(testPass); // agent must be unlocked in order to be stored
+    testAgent.unlock(testPass); // agent must be unlocked in order to be stored
     node.storeAgent(testAgent);
     node.launch();
 
-    ServiceAgent testService = ServiceAgent.createServiceAgent(testTemplateService, "a pass");
-    testService.unlockPrivateKey("a pass");
+    ServiceAgent testService = ServiceAgentImpl.createServiceAgent(testTemplateService, "a pass");
+    testService.unlock("a pass");
 
     node.registerReceiver(testService);
 
@@ -111,8 +111,6 @@ $Test_Methods$
 
     connector = null;
     node = null;
-
-    LocalNode.reset();
 
     System.out.println("Connector-Log:");
     System.out.println("--------------");

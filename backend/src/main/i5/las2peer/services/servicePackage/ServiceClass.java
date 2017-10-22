@@ -14,10 +14,9 @@ import javax.ws.rs.Consumes;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.MediaType;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-
-import i5.las2peer.api.Service;
 import i5.las2peer.api.Context;
+import i5.las2peer.api.ManualDeployment;
+import i5.las2peer.api.ServiceException;
 import i5.las2peer.restMapper.RESTService;
 import i5.las2peer.restMapper.annotations.ServicePath;
 $Database_Import$
@@ -43,6 +42,7 @@ import org.json.simple.*;
  *
  */
 @ServicePath("$Relative_Resource_Path$")
+@ManualDeployment
 public class $Resource_Name$ extends RESTService {
 
 
@@ -53,7 +53,7 @@ $Database_Configuration$
 	super();
     // read and set properties values
     setFieldValues();
-$Database_Instantiation$
+    $Database_Instantiation$
   }
 
   @Override
