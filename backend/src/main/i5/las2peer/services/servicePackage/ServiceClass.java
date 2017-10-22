@@ -68,8 +68,8 @@ $Database_Instantiation$
   @Api
   @SwaggerDefinition(
       info = @Info(title = "$Microservice_Name$", version = "$Metadata_Version$",
-          description = "$Metadata_Description",
-          termsOfService = "$Metadata_Terms",
+          description = "$Metadata_Description$",
+          termsOfService = "$Metadata_Terms$",
           contact = @Contact(name = "$Developer$", email = "CAEAddress@gmail.com") ,
           license = @License(name = "BSD",
               url = "$License_File_Address$") ) )
@@ -77,8 +77,6 @@ $Database_Instantiation$
   public static class RootResource {
 
     private final $Resource_Name$ service = ($Resource_Name$) Context.getCurrent().getService();
-
-    $Service_Methods$
 
   }
 
