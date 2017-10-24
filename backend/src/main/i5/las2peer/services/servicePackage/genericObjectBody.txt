@@ -1,0 +1,6 @@
+public class $className$ {
+
+    $classProperties$
+    $classSetter$
+    $classGetter$
+}

@@ -78,6 +78,8 @@ $Database_Instantiation$
 
     private final $Resource_Name$ service = ($Resource_Name$) Context.getCurrent().getService();
 
+    $Service_Methods$
+
   }
 
   // //////////////////////////////////////////////////////////////////////////////////////

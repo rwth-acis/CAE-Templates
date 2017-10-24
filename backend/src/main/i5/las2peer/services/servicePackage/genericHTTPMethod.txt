@@ -1,7 +1,7 @@
   /**
    * 
    * -{$HTTPMethod_Name_Comment$}-
-   * -{$HTTPMethod_Metadata_Description$}-
+   *
    * 
 $HTTPMethod_Params$
    * 
