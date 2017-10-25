@@ -15,14 +15,13 @@ import org.junit.Test;
 import javax.ws.rs.core.MediaType;
 
 import i5.las2peer.p2p.LocalNode;
-import i5.las2peer.p2p.LocalNodeManager;
-import i5.las2peer.api.p2p.ServiceNameVersion;
-import i5.las2peer.security.ServiceAgentImpl;
-import i5.las2peer.security.UserAgentImpl;
+import i5.las2peer.p2p.ServiceNameVersion;
+import i5.las2peer.security.ServiceAgent;
+import i5.las2peer.security.UserAgent;
 import i5.las2peer.testing.MockAgentFactory;
-import i5.las2peer.connectors.webConnector.WebConnector;
-import i5.las2peer.connectors.webConnector.client.ClientResponse;
-import i5.las2peer.connectors.webConnector.client.MiniClient;
+import i5.las2peer.webConnector.WebConnector;
+import i5.las2peer.webConnector.client.ClientResponse;
+import i5.las2peer.webConnector.client.MiniClient;
 import org.json.simple.JSONObject;
 import org.json.simple.JSONValue;
 
@@ -44,7 +43,7 @@ public class $Resource_Name$Test {
   private static WebConnector connector;
   private static ByteArrayOutputStream logStream;
 
-  private static UserAgentImpl testAgent;
+  private static UserAgent testAgent;
   private static final String testPass = "adamspass";
 
   // version does not matter in tests
@@ -66,14 +65,14 @@ public class $Resource_Name$Test {
   public static void startServer() throws Exception {
 
     // start node
-	node = new LocalNodeManager().newNode();
+    node = LocalNode.newNode();
     testAgent = MockAgentFactory.getAdam();
-    testAgent.unlock(testPass); // agent must be unlocked in order to be stored
+    testAgent.unlockPrivateKey(testPass); // agent must be unlocked in order to be stored
     node.storeAgent(testAgent);
     node.launch();
 
-    ServiceAgentImpl testService = ServiceAgentImpl.createServiceAgent(testTemplateService, "a pass");
-    testService.unlock("a pass");
+    ServiceAgent testService = ServiceAgent.createServiceAgent(testTemplateService, "a pass");
+    testService.unlockPrivateKey("a pass");
 
     node.registerReceiver(testService);
 
@@ -112,6 +111,8 @@ $Test_Methods$
 
     connector = null;
     node = null;
+
+    LocalNode.reset();
 
     System.out.println("Connector-Log:");
     System.out.println("--------------");
