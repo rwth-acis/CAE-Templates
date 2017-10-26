@@ -5,4 +5,4 @@
   private String jdbcLogin;
   private String jdbcPass;
   private String jdbcUrl;
-  private DatabaseManager dbm;
+  private static DatabaseManager dbm;
