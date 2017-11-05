@@ -1,4 +1,4 @@
-public class $Class_Name$ {
+class $Class_Name$ {
 
     public $Class_Name$() {}
     
