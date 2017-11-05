@@ -5,5 +5,5 @@
     }
 
     public $Property_Type$ get$Property_Name$() {
-        return this.$Property_Name_LowerCase;
+        return this.$Property_Name_LowerCase$;
     }
