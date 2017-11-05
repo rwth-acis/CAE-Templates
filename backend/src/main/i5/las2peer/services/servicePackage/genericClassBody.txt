@@ -2,6 +2,6 @@ class $Class_Name$ {
 
     public $Class_Name$() {}
     
-    $Class_Properties$
-    
+$Class_Properties$
+
 }
