@@ -6,7 +6,7 @@ class $Class_Name$ {
     public JSONObject toJSON() {
 
         JSONObject jo = new JSONObject();
-        $Class_ToJson$
+$Class_ToJson$
         return jo;
     }
 
