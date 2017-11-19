@@ -10,7 +10,7 @@ $Class_ToJson$
         return jo;
     }
 
-    public void fromJson(String jsonString) throws ParseException {
+    public void fromJSON(String jsonString) throws ParseException {
         JSONObject jsonObject = (JSONObject) JSONValue.parseWithException(jsonString);
 $Json_ToClass$
     }
