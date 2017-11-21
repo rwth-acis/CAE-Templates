@@ -32,25 +32,26 @@
 
 var client;
 
-var init = function() {
+var init = function() {-{
   
-  var iwcCallback = function(intent) {
-    // define your reactions on incoming iwc events here
+}-  var iwcCallback = function(intent) {
+    // define your reactions on incoming iwc events here -{
     console.log(intent);
-$IWC_Responses$
-  };
-  
-  client = new Las2peerWidgetLibrary("$Microservice_Endpoint_Url$", iwcCallback);
-  
-$Yjs_Code$
-
-$Events$
-
+}-$IWC_Responses$-{
+}-  };
+-{
+}-  client = new Las2peerWidgetLibrary("-{$Microservice_Endpoint_Url$}-", iwcCallback);-{
+}-$Yjs_Code$-{
+}-$Events$-{
+}-
 }
 
+var initClient = function(y) {
+  this.client = new Las2peerWidgetLibrary("", iwcCallback, "127.0.0.1:8073", y);
+  console.log("Client initialized");
+};
 
-$Functions$
-
-$(document).ready(function() {
-  init();
-});
+$Functions$-{
+}-$(document).ready(function() {
+  init();-{
+}-});
