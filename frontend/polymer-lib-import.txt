@@ -1,0 +1,2 @@
+  <script src="$Widget_Home$/js/lib/webcomponents-lite.min.js"></script>
+  
