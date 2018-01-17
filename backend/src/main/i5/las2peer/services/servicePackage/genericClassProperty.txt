@@ -1,0 +1,9 @@
+    private $Property_Type$ $Property_Name_LowerCase$;
+
+    public void set$Property_Name$($Property_Type$ setValue) {
+        this.$Property_Name_LowerCase$ = setValue;
+    }
+
+    public $Property_Type$ get$Property_Name$() {
+        return this.$Property_Name_LowerCase$;
+    }

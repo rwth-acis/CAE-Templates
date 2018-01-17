@@ -1,10 +1,11 @@
   /**
    * 
    * -{$HTTPMethod_Name_Comment$}-
+   *
    * 
 $HTTPMethod_Params$
    * 
-   * @return Response -{ }-
+   * @return Response $Response_Description$
    * 
    */
   $HTTP_Method_Type$
