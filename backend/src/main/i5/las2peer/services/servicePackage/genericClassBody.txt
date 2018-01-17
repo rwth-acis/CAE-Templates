@@ -1,0 +1,18 @@
+class $Class_Name$ {
+
+    public $Class_Name$() {}
+    $Class_Properties$
+
+    public JSONObject toJSON() {
+
+        JSONObject jo = new JSONObject();
+$Class_ToJson$
+        return jo;
+    }
+
+    public void fromJSON(String jsonString) throws ParseException {
+        JSONObject jsonObject = (JSONObject) JSONValue.parseWithException(jsonString);
+$Json_ToClass$
+    }
+
+}
