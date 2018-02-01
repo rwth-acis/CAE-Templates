@@ -1,1 +1,1 @@
-       @ApiResponse(code = HttpURLConnection.$HTTPResponse_Code$, message = "-{$HTTPResponse_Name$}-")
+       @ApiResponse(code = HttpURLConnection.$HTTPResponse_Code$, message = "$HTTPResponse_Name$")
