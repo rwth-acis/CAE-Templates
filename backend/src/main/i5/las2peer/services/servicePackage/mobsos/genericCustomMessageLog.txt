@@ -1,0 +1,1 @@
+Context.get().monitorEvent((Object)null, MonitoringEvent.SERVICE_CUSTOM_MESSAGE_$CUSTOM_MESSAGE_ID$, $CUSTOM_MESSAGE_CONTENT$, $Include_Acting_Agent$);

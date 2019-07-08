@@ -1,0 +1,1 @@
+long $Time_Variable_Name$ = System.currentTimeMillis();

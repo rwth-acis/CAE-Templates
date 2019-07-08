@@ -1,3 +1,6 @@
+$Measure_Start_Time$
 $Invocations$
+$Measure_Finish_Time$
+$Log_Time_Difference$
 $HTTPMethod_Responses$
     return null;

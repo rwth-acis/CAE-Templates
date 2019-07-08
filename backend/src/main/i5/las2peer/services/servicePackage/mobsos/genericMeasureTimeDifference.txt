@@ -1,0 +1,1 @@
+long $Time_Delta_Variable_Name$ = $Stop_Time_Variable_Name$ - $Start_Time_Variable_Name$;

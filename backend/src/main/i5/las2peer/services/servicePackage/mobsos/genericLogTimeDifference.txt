@@ -1,0 +1,5 @@
+JSONObject $Time_Delta_Json_Name$ = new JSONObject();
+$Time_Delta_Json_Name$.put("time", $Time_Delta_Variable_Name$);
+$Time_Delta_Json_Name$.put("method", $Http_Method_Name$);
+$Time_Delta_Json_Name$.put("resource", $Resource_Method_Name$);
+$Log_Call$
