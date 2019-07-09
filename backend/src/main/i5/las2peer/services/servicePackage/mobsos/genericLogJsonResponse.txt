@@ -1,2 +1,0 @@
-String $Json_string_Variable_Name$ = $Json_Object_Variable$.toJSONString();
-$Log_String_Response$
