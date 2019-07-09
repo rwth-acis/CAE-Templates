@@ -1,0 +1,6 @@
+JSONObject $Response_Json_Name$ = new JSONObject();
+$Response_Json_Name$.put("response", $Response_Variable_Name$);
+$Response_Json_Name$.put("code", $Response_Code$);
+$Response_Json_Name$.put("method", $Http_Method_Name$);
+$Response_Json_Name$.put("resource", $Resource_Method_Name$);
+$Log_Call$

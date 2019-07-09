@@ -17,6 +17,6 @@ $HTTPMethod_Api_Responses$
   })
   @ApiOperation(value = "$HTTPMethod_Name$", notes = "-{ }-")
   public Response $HTTPMethod_Name$($HTTPMethod_Parameters$) {
-$HTTPMethod_Casts$-{$HTTPMethod_Body$}-
+$HTTPMethod_Casts$$Log_Payloads$-{$HTTPMethod_Body$}-
   }
 

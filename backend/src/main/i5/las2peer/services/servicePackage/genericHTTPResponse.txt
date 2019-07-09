@@ -2,5 +2,6 @@
     boolean $HTTPResponse_Name$_condition = true;
     if($HTTPResponse_Name$_condition) {
       $HTTPResponse_ResultType$ $HTTPResponse_ResultName$ = $HTTP_Response_Result_Init$;
+      $Log_Response$
       return Response.status(HttpURLConnection.$HTTPResponse_Code$).entity($HTTPResponse_ResultName_Argument$).build();
     }
