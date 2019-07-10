@@ -1,6 +1,6 @@
 JSONObject $Payload_Json_Name$ = new JSONObject();
-$Payload_Json_Name$.put("payload", $Payload_Variable_Name$);
-$Payload_Json_Name$.put("payload_name", $Payload_Name$);
-$Payload_Json_Name$.put("method", $Http_Method_Name$);
-$Payload_Json_Name$.put("resource", $Resource_Method_Name$);
-$Log_Call$
+    $Payload_Json_Name$.put("payload", $Payload_Variable_Name$);
+    $Payload_Json_Name$.put("payload_name", "$Payload_Variable_Name$");
+    $Payload_Json_Name$.put("method", $Http_Method_Name$);
+    $Payload_Json_Name$.put("resource", $Resource_Method_Name$);
+    $Log_Call$

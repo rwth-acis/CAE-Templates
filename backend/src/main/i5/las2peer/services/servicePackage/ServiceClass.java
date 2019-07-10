@@ -1,23 +1,7 @@
 package i5.las2peer.services.$Lower_Resource_Name$;
 
-$Additional_Import$
-import java.net.HttpURLConnection;
-
-import javax.ws.rs.DELETE;
-import javax.ws.rs.GET;
-import javax.ws.rs.POST;
-import javax.ws.rs.PUT;
-import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
-import javax.ws.rs.Produces;
-import javax.ws.rs.Consumes;
-import javax.ws.rs.core.Response;
-import javax.ws.rs.core.MediaType;
-
 import i5.las2peer.api.Context;
 import i5.las2peer.api.ManualDeployment;
-import i5.las2peer.api.ServiceException;
-import i5.las2peer.api.logging.MonitoringEvent;
 import i5.las2peer.restMapper.RESTService;
 import i5.las2peer.restMapper.annotations.ServicePath;
 $Database_Import$
@@ -30,6 +14,9 @@ import io.swagger.annotations.Info;
 import io.swagger.annotations.License;
 import io.swagger.annotations.SwaggerDefinition;
 import org.json.simple.*;
+
+import java.util.HashMap;
+import java.util.Map;
 -{ }-
 
 /**
@@ -88,5 +75,15 @@ $Database_Configuration$
   // //////////////////////////////////////////////////////////////////////////////////////
   -{
   }-
+
+  // //////////////////////////////////////////////////////////////////////////////////////
+  // Custom monitoring message descriptions (can be called via RMI)
+  // //////////////////////////////////////////////////////////////////////////////////////
+
+  public Map<String, String> getCustomMessageDescriptions() {
+    Map<Integer, String> descriptions = new HashMap<>();
+    $Custom_Message_Descripions$
+    return descriptions;
+  }
 
 }
