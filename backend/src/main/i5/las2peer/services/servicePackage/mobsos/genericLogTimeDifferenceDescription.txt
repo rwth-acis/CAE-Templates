@@ -2,7 +2,7 @@
         + "\n"
         + "The number of milliseconds until the response is returned is logged according to the following JSON pattern:\n"
         + "```json\n"
-        + "{ "time": <time_in_ms>, "method": <method_name>, "resource": <resource_name> }"
+        + "{ \"time\": <time_in_ms>, \"method\": <method_name>, \"resource\": <resource_name> }"
         + "```\n"
         + "## Example Measures\n"
         + "### Response Duration\n"
