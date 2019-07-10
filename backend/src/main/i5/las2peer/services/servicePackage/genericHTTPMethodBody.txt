@@ -1,7 +1,11 @@
 $Measure_Start_Time$
+
+    // service method invocations
 $Invocations$
+
 $Measure_Finish_Time$
 $Measure_Delta_Time$
 $Log_Time_Difference$
+
 $HTTPMethod_Responses$
     return null;
