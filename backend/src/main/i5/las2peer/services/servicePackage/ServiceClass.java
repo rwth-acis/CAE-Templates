@@ -81,7 +81,7 @@ $Database_Configuration$
   // //////////////////////////////////////////////////////////////////////////////////////
 
   public Map<String, String> getCustomMessageDescriptions() {
-    Map<Integer, String> descriptions = new HashMap<>();
+    Map<String, String> descriptions = new HashMap<>();
     $Custom_Message_Descripions$
     return descriptions;
   }
