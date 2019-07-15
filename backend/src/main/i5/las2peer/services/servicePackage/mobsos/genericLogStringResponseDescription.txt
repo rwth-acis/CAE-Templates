@@ -2,7 +2,7 @@
         + "\n"
         + "The response is logged according to the following JSON pattern:\n"
         + "```json\n"
-        + "{ \"response\": <response_content>, \"code\": <http_code>, \"method\": <method_name>, \"resource\": <resource_name> }"
+        + "{ \"response\": <response_content>, \"code\": <http_code>, \"method\": <method_name>, \"resource\": <resource_name> }\n"
         + "```\n"
         + "## Example Measures\n"
         + "### $Method_Name$ Reponses\n"

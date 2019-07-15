@@ -2,7 +2,7 @@
         + "\n"
         + "The payload *$PAYLOAD_NAME$* is logged according to the following JSON pattern:\n"
         + "```json\n"
-        + "{ \"payload\": <payload_content>, \"payload_name\": <name_of_payload_variable>, \"method\": <method_name>, \"resource\": <resource_name> }"
+        + "{ \"payload\": <payload_content>, \"payload_name\": <name_of_payload_variable>, \"method\": <method_name>, \"resource\": <resource_name> }\n"
         + "```\n"
         + "## Example Measures\n"
         + "### $Method_Name$ Payloads\n"
