@@ -19,6 +19,16 @@ $HTTPMethod_Api_Responses$
   public Response $HTTPMethod_Name$($HTTPMethod_Parameters$) {
 $HTTPMethod_Casts$
 $Log_Payloads$
+
+$Measure_Start_Time$
+
+    // service method invocations
+-{$Invocations$}-
+
+$Measure_Finish_Time$
+$Measure_Delta_Time$
+$Log_Time_Difference$
+
 -{$HTTPMethod_Body$}-
   }
 
