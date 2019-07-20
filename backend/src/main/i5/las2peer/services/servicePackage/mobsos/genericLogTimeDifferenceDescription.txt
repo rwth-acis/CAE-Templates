@@ -8,7 +8,7 @@
         + "### Response Duration\n"
         + "Show in a line chart how long each request took to be processed.\n"
         + "```sql\n"
-        + "SELECT TIME_STAMP, CAST(JSON_EXTRACT(REMARKS,\"$.time\") AS UNSIGNED) FROM MESSAGE WHERE EVENT=\"SERVICE_CUSTOM_MESSAGE_$Message_ID$\" AND SOURCE_AGENT = '$SERVICE$'\n"
+        + "SELECT TIME_STAMP, CAST(JSON_EXTRACT(REMARKS,\"$.time\") AS UNSIGNED) AS timing FROM MESSAGE WHERE EVENT=\"SERVICE_CUSTOM_MESSAGE_$Message_ID$\" AND SOURCE_AGENT = '$SERVICE$'\n"
         + "```\n"
         + "Visualization: line chart\n"
         + "\n"
