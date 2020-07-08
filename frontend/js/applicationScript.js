@@ -40,7 +40,7 @@ var init = function() {-{
 }-$IWC_Responses$-{
 }-  };
 -{
-}-  client = new Las2peerWidgetLibrary("$Microservice_Url$/-{$Microservice_Endpoint$}-", iwcCallback);-{
+}-  client = new Las2peerWidgetLibrary("$Microservice_Url$/-{$Microservice_Endpoint$}-", iwcCallback, '*');-{
 }-$Yjs_Code$-{
 }-$Events$-{
 }-
