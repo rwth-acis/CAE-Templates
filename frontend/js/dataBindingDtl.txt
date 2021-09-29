@@ -1,0 +1,10 @@
+/**dtl**/
+
+$(root).html("");
+for (var key in arr) {
+    var text = key + " : " + arr[key];
+    console.log(text);
+    var p = document.createElement('p');
+    p.appendChild(document.createTextNode(text));
+    root.appendChild(p);
+}
