@@ -8,14 +8,13 @@ Y({-{
   },
   sourceDir: "http://y-js.org/bower_components",
   }-share: {
-$Variable_Init$-{ }-
+$Variable_Init$-{ }-,
     intents: 'Map'
   }
 }).then(function (y) {
   window.yTextarea = y
 $Share_Element$
--{ 
+-{
 }-}).catch(function(y) {
   console.log("YJS failed to load");
 });
-

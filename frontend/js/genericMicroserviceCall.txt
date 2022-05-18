@@ -1,4 +1,4 @@
-  client.sendRequest("$Method_Type$", -{$Method_Path$}-, -{$Content$}-, "$Content_Type$", -{{}}-, $Authenticate$,
+  client.sendRequest("$Method_Type$", "-{$Method_Path$}-", -{$Content$}-, "$Content_Type$", -{{}}-, $Authenticate$,
   function(data, type) {
     -{console.log(data);}-$HTML_Elements_Updates$
   },
