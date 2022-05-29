@@ -1,0 +1,2 @@
+
+Assert.assertTrue("$Message$", result.getHttpCode() $Comparison_Operator$ $Value$);

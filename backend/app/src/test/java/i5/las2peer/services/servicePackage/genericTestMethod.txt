@@ -1,22 +1,13 @@
-  /**
-   * 
-   * Test for the $HTTP_Method_Name$ method.
-   * 
-   */
-  @Test
-  public void test$HTTP_Method_Name$() {
-    MiniClient c = new MiniClient();
-    c.setAddressPort(HTTP_ADDRESS, HTTP_PORT);
-    try {
-$TestMethod_Variables$
-      c.setLogin(testAgent.getIdentifier(), testPass);
-      ClientResponse result = c.sendRequest("$HTTP_Method_Type$", mainPath + "/$HTTPMethod_Path$", -{$HTTPMethod_Content$}-,
-        $HTTPMethod_Consumes$, $HTTPMethod_Produces$, new HashMap<String,String>());
-      -{assertTrue(true); // change here}-
-      System.out.println("Result of 'test$HTTP_Method_Name$': " + result.getResponse().trim());
-    } catch (Exception e) {
-      e.printStackTrace();
-      fail("Exception: " + e);
-    }
-  }
-
+/**
+ * 
+ * Test for the $HTTP_Method_Name$ method.
+ * 
+ */
+@Test
+public void test$HTTP_Method_Name$2() {
+  MiniClient c = new MiniClient();
+  c.setConnectorEndpoint(connector.getHttpEndpoint());
+  
+  $Test_Requests$
+  
+}
