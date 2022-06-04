@@ -1,5 +1,9 @@
 package i5.las2peer.services.$Lower_Resource_Name$;
 
+import static i5.las2peer.services.$Lower_Resource_Name$.TestUtil.*;
+import static org.hamcrest.Matchers.*;
+import static org.hamcrest.MatcherAssert.assertThat;
+
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 

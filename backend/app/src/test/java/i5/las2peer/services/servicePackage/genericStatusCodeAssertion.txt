@@ -1,2 +1,1 @@
-
-Assert.assertTrue("$Message$", result.getHttpCode() $Comparison_Operator$ $Value$);
+Assert.assert$Comparison_Operator$("$Message$", result.getHttpCode(), $Value$);
