@@ -1,6 +1,7 @@
 
 try {
-  ClientResponse result = c.sendRequest("$HTTP_Method_Type$", mainPath + "/$HTTPMethod_Path$", "");
+  c.setLogin($Agent_Identifier$, $Agent_Password$);
+  ClientResponse result = c.sendRequest("$HTTP_Method_Type$", mainPath + "/$HTTPMethod_Path$", $Request_Body$);
 $Request_Assertions$
   System.out.println("Result of 'test$HTTP_Method_Name$': " + result.getResponse().trim());
 } catch (Exception e) {
