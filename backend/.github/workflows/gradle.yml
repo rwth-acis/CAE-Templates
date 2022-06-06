@@ -22,3 +22,8 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew build
+    - uses: actions/upload-artifact@v3
+      if: always()
+      with:
+        name: test-results
+        path: app/build/test-results/test/
