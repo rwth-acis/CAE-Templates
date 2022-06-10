@@ -2,8 +2,8 @@
 try {
   c.setLogin($Agent_Identifier$, $Agent_Password$);
   ClientResponse result = c.sendRequest("$HTTP_Method_Type$", mainPath + "/$HTTPMethod_Path$", $Request_Body$);
+  System.out.println("Result of request with id: $Request_Id$: " + result.getResponse().trim());
 $Request_Assertions$
-  System.out.println("Result of 'test$HTTP_Method_Name$': " + result.getResponse().trim());
 } catch (Exception e) {
   e.printStackTrace();
   fail("Exception: " + e);
