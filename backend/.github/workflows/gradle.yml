@@ -27,3 +27,15 @@ jobs:
       with:
         name: test-results
         path: app/build/test-results/test/
+    - uses: actions/upload-artifact@v3
+      if: always()
+      with:
+        name: swagger.json
+        path: app/export/swagger.json
+    - uses: actions/upload-artifact@v3
+      if: always()
+      with:
+        name: swagger-coverage-report
+        path: |
+          app/swagger-coverage-results.json
+          app/swagger-coverage-report.html

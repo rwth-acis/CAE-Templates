@@ -1,7 +1,7 @@
 
 try {
   c.setLogin($Agent_Identifier$, $Agent_Password$);
-  ClientResponse result = c.sendRequest("$HTTP_Method_Type$", "/$HTTPMethod_Path$", $Request_Body$, "$Content_Type$", "*/*", new HashMap<>()$Path_Params$);
+  ClientResponse result = c.sendRequest("$HTTP_Method_Type$", "/$HTTPMethod_Path$", $Request_Body$, "$Content_Type$", "*/*", new HashMap<>(), $Path_Params$);
   System.out.println("Result of request with id: $Request_Id$: " + result.getResponse().trim());
 $Request_Assertions$
 } catch (Exception e) {

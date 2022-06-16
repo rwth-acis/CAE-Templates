@@ -8,9 +8,16 @@ import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
 import java.io.ByteArrayOutputStream;
+import java.io.InputStream;
 import java.io.IOException;
 import java.io.PrintStream;
+import java.net.URL;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
 import java.util.HashMap;
+
+import com.github.viclovsky.swagger.coverage.core.generator.Generator;
 
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
@@ -100,6 +107,10 @@ public class $Resource_Name$Test {
     connector.setLogStream(new PrintStream(logStream));
     connector.start(node);
     Thread.sleep(1000); // wait a second for the connector to become ready
+
+    // download swagger.json
+    InputStream in = new URL(connector.getHttpEndpoint() + "/" + mainPath + "/swagger.json").openStream();
+    Files.copy(in, Paths.get("export/swagger.json"), StandardCopyOption.REPLACE_EXISTING);
     
     -{ }-
   }
@@ -129,6 +140,10 @@ $Test_Methods$
     System.out.println("--------------");
 
     System.out.println(logStream.toString());
+
+    new Generator().setInputPath(Paths.get("swagger-coverage-output/"))
+            .setSpecPath(Paths.get("export/swagger.json").toUri())
+            .run();
   }
 
 }
