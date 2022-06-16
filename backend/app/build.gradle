@@ -20,6 +20,10 @@ dependencies {
     testImplementation "org.junit.jupiter:junit-jupiter-api:5.8.2"
     testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:5.8.2"
     testImplementation "org.hamcrest:hamcrest:2.2"
+
+    testImplementation "com.github.viclovsky:swagger-coverage-commons:1.5.0"
+    testImplementation "com.github.viclovsky:swagger-coverage-commandline:1.5.0"
+    testImplementation "io.swagger.core.v3:swagger-models:2.2.0" // required for using CoverageOutputWriter
     
     // las2peer bundle which is not necessary in the runtime path
     // compileOnly will be moved into the lib dir afterwards
