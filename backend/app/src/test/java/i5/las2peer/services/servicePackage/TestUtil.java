@@ -1,5 +1,13 @@
 package i5.las2peer.services.$Lower_Resource_Name$;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.networknt.schema.JsonSchema;
+import com.networknt.schema.JsonSchemaFactory;
+import com.networknt.schema.SpecVersion;
+import com.networknt.schema.ValidationMessage;
+
 import org.hamcrest.Description;
 import org.hamcrest.FeatureMatcher;
 import org.hamcrest.Matcher;
@@ -8,6 +16,7 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
 import java.util.List;
+import java.util.Set;
 
 public class TestUtil {
 
@@ -51,6 +60,35 @@ public class TestUtil {
             @Override
             protected JSONObject featureValueOf(Object o) {
                 return (JSONObject) o;
+            }
+        };
+    }
+    
+    public static TypeSafeDiagnosingMatcher<JSONObject> followsSchema(String schemaName, String schema) {
+        return new TypeSafeDiagnosingMatcher<>() {
+            @Override
+            protected boolean matchesSafely(JSONObject jsonObject, Description mismatchDescription) {
+                JsonSchemaFactory schemaFactory = JsonSchemaFactory.getInstance(SpecVersion.VersionFlag.V4);
+                JsonSchema s = schemaFactory.getSchema(schema);
+                ObjectMapper mapper = new ObjectMapper();
+                JsonNode node = null;
+                try {
+                    node = mapper.readTree(jsonObject.toJSONString());
+                } catch (JsonProcessingException e) {
+                    e.printStackTrace();
+                }
+                Set<ValidationMessage> errors = s.validate(node);
+                if(errors.size() == 0) {
+                    return true;
+                } else {
+                    mismatchDescription.appendText(errors.toArray()[0].toString());
+                    return false;
+                }
+            }
+
+            @Override
+            public void describeTo(Description description) {
+                description.appendText("should match schema " + schemaName);
             }
         };
     }
