@@ -1,0 +1,16 @@
+client.sendRequest("$Method_Type$", "-{$Method_Path$}-", -{$Content$}-, "$Content_Type$", -{{}}-, $Authenticate$,
+function(data, type) {
+  -{console.log(data);}-
+
+  if(isList) {
+    var div = document.getElementById('-{$List_Container_Id$}-');
+    buildList(div, data.-{$Method_Path$}-);
+  } else {
+    var div = document.getElementById('-{$Dtl_Container_Id$}-');
+    var result = data.-{$Method_Path$}-.filter(x => x.$Param_Input$ === param);
+    buildDetail(div, result[0]);
+  }
+},
+function(error) {
+  -{console.log(error);}-
+});
